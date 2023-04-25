@@ -117,19 +117,15 @@ public class Dashboard extends JFrame {
             }
         });
         add(buttonPanel, BorderLayout.CENTER);
-
         setVisible(true);
     }
-
-
-public static void main(String[] args) {
-try {
-UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
-} catch (Exception e) {
-e.printStackTrace();
-}
-
-Dashboard dashboard = new Dashboard();
-dashboard.setVisible(true); // Show the dashboard page
-}
+    public static void main(String[] args) {
+        try {
+            UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        Dashboard dashboard = new Dashboard();
+        dashboard.setVisible(true); // Show the dashboard page
+    }
 }//

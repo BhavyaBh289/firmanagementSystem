@@ -5,30 +5,18 @@ import javax.crypto.spec.SecretKeySpec;
 import javax.swing.*;
 import java.awt.event.ActionListener;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.FlowLayout;
-import java.awt.Font;
-import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.FileWriter;
 import java.util.Base64;
 
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 public class add_record extends JFrame {
-
-
-
     public add_record() {
         setTitle("FIR Registration Page");
         getContentPane().setBackground(Color.BLACK);
@@ -97,64 +85,66 @@ public class add_record extends JFrame {
         setSize(1920,1080);
         setLayout(null);
         setVisible(true);
-        b1.addActionListener(e -> {
-            String victimName = t1.getText();
-            String dob = t2.getText();
-            String firNo = t3.getText();
-            String gender = t5.isSelected() ? "MALE" : "FEMALE";
-            String accusedName = t7.getText();
-            String crimeCommitted = t4.getText();
+        b1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                String victimName = t1.getText();
+                String dob = t2.getText();
+                String firNo = t3.getText();
+                String gender = t5.isSelected() ? "MALE" : "FEMALE";
+                String accusedName = t7.getText();
+                String crimeCommitted = t4.getText();
 
-            // Encrypt user input using AES encryption
-            try {
-                String secretKey = "mySecretKey12345"; // Replace with your own secret key
-                byte[] key = secretKey.getBytes();
-                SecretKeySpec secretKeySpec = new SecretKeySpec(key, "AES");
-                Cipher cipher = Cipher.getInstance("AES");
-                cipher.init(Cipher.ENCRYPT_MODE, secretKeySpec);
-                byte[] encryptedVictimName = cipher.doFinal(victimName.getBytes());
-                byte[] encryptedDOB = cipher.doFinal(dob.getBytes());
-                byte[] encryptedFIRNo = cipher.doFinal(firNo.getBytes());
-                byte[] encryptedGender = cipher.doFinal(gender.getBytes());
-                byte[] encryptedAccusedName = cipher.doFinal(accusedName.getBytes());
-                byte[] encryptedCrimeCommitted = cipher.doFinal(crimeCommitted.getBytes());
-                // Encode the encrypted data in base64 format and print to console
-                String encodedVictimName = Base64.getEncoder().encodeToString(encryptedVictimName);
-                String encodedDOB = Base64.getEncoder().encodeToString(encryptedDOB);
-                String encodedFIRNo = Base64.getEncoder().encodeToString(encryptedFIRNo);
-                String encodedGender = Base64.getEncoder().encodeToString(encryptedGender);
-                String encodedAccusedName = Base64.getEncoder().encodeToString(encryptedAccusedName);
-                String encodedCrimeCommitted = Base64.getEncoder().encodeToString(encryptedCrimeCommitted);
-
-                System.out.println("Victim Name: " + encodedVictimName);
-                System.out.println("DOB: " + encodedDOB);
-                System.out.println("FIR No: " + encodedFIRNo);
-                System.out.println("Gender: " + encodedGender);
-                System.out.println("Accused Name: " + encodedAccusedName);
-                System.out.println("Crime Committed: " + encodedCrimeCommitted);
-
+                // Encrypt user input using AES encryption
                 try {
-                    // Create a file to store the encrypted data
-                    File file = new File("encrypted_data.txt");
-                    file.createNewFile();
+                    String secretKey = "mySecretKey12345"; // Replace with your own secret key
+                    byte[] key = secretKey.getBytes();
+                    SecretKeySpec secretKeySpec = new SecretKeySpec(key, "AES");
+                    Cipher cipher = Cipher.getInstance("AES");
+                    cipher.init(Cipher.ENCRYPT_MODE, secretKeySpec);
+                    byte[] encryptedVictimName = cipher.doFinal(victimName.getBytes());
+                    byte[] encryptedDOB = cipher.doFinal(dob.getBytes());
+                    byte[] encryptedFIRNo = cipher.doFinal(firNo.getBytes());
+                    byte[] encryptedGender = cipher.doFinal(gender.getBytes());
+                    byte[] encryptedAccusedName = cipher.doFinal(accusedName.getBytes());
+                    byte[] encryptedCrimeCommitted = cipher.doFinal(crimeCommitted.getBytes());
+                    // Encode the encrypted data in base64 format and print to console
+                    String encodedVictimName = Base64.getEncoder().encodeToString(encryptedVictimName);
+                    String encodedDOB = Base64.getEncoder().encodeToString(encryptedDOB);
+                    String encodedFIRNo = Base64.getEncoder().encodeToString(encryptedFIRNo);
+                    String encodedGender = Base64.getEncoder().encodeToString(encryptedGender);
+                    String encodedAccusedName = Base64.getEncoder().encodeToString(encryptedAccusedName);
+                    String encodedCrimeCommitted = Base64.getEncoder().encodeToString(encryptedCrimeCommitted);
 
-                    // Write the encrypted data to the file
-                    FileWriter writer = new FileWriter(file);
-                    writer.write("Victim Name: " + encodedVictimName + "\n");
-                    writer.write("DOB: " + encodedDOB + "\n");
-                    writer.write("FIR No: " + encodedFIRNo + "\n");
-                    writer.write("Gender: " + encodedGender + "\n");
-                    writer.write("Accused Name: " + encodedAccusedName + "\n");
-                    writer.write("Crime Committed: " + encodedCrimeCommitted + "\n");
-                    writer.close();
+                    System.out.println("Victim Name: " + encodedVictimName);
+                    System.out.println("DOB: " + encodedDOB);
+                    System.out.println("FIR No: " + encodedFIRNo);
+                    System.out.println("Gender: " + encodedGender);
+                    System.out.println("Accused Name: " + encodedAccusedName);
+                    System.out.println("Crime Committed: " + encodedCrimeCommitted);
 
-                    System.out.println("Encrypted data written to file.");
+                    try {
+                        // Create a file to store the encrypted data
+                        File file = new File("encrypted_data.txt");
+                        file.createNewFile();
+
+                        // Write the encrypted data to the file
+                        FileWriter writer = new FileWriter(file);
+                        writer.write("Victim Name: " + encodedVictimName + "\n");
+                        writer.write("DOB: " + encodedDOB + "\n");
+                        writer.write("FIR No: " + encodedFIRNo + "\n");
+                        writer.write("Gender: " + encodedGender + "\n");
+                        writer.write("Accused Name: " + encodedAccusedName + "\n");
+                        writer.write("Crime Committed: " + encodedCrimeCommitted + "\n");
+                        writer.close();
+
+                        System.out.println("Encrypted data written to file.");
+                    } catch (Exception ex) {
+                        ex.printStackTrace();
+                    }
+
                 } catch (Exception ex) {
                     ex.printStackTrace();
                 }
-
-            } catch (Exception ex) {
-                ex.printStackTrace();
             }
         });
 
