@@ -18,7 +18,7 @@ public class Map extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         // Load the image from file
-        ImageIcon icon = new ImageIcon("C:\\Users\\sanch\\Desktop\\map.jpg");
+        ImageIcon icon = new ImageIcon("map.jpg");
         image = new BufferedImage(icon.getIconWidth(), icon.getIconHeight(), BufferedImage.TYPE_INT_RGB);
         Graphics g = image.createGraphics();
         icon.paintIcon(null, g, 0, 0);

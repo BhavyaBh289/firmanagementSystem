@@ -20,7 +20,7 @@ public class LoginPage extends JFrame implements ActionListener {
         setLayout(new BorderLayout());
 
         // Add background image
-        ImageIcon background = new ImageIcon("C:\\Users\\sanch\\Downloads\\fir.jpeg");
+        ImageIcon background = new ImageIcon("fir.jpeg");
         backgroundLabel = new JLabel(background);
         backgroundLabel.setBounds (0,0,1060, 838);
         add(backgroundLabel);
@@ -87,7 +87,7 @@ public class LoginPage extends JFrame implements ActionListener {
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 Connection con = DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/fir_management_system", "root", "Sanch@123");
+                        "jdbc:mysql://localhost:3306/fir_management_system", "root", "");
 
                 String username = usernameField.getText();
                 String password = String.valueOf(passwordField.getPassword());

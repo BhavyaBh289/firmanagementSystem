@@ -65,7 +65,7 @@ public class CriminalDataEntry extends JFrame {
                 try {
                     // Establish a JDBC connection
                     Class.forName("com.mysql.cj.jdbc.Driver");
-                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/fir_management_system","root","Sanch@123");
+                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/fir_management_system","root","");
 
                     // Create a statement object
                     PreparedStatement pst = con.prepareStatement("INSERT INTO criminals (name, age, address, crime_type, description) VALUES (?, ?, ?, ?, ?)");

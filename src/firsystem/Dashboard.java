@@ -21,7 +21,7 @@ public class Dashboard extends JFrame {
         // Create and add the buttons with icons
      
      // Create and add the buttons with icons
-        ImageIcon registerIcon = new ImageIcon("C:\\Users\\sanch\\Desktop\\list.jpg");
+        ImageIcon registerIcon = new ImageIcon("list.jpg");
         registerButton = new JButton(registerIcon);
         registerButton.setToolTipText("About the project");
         registerButton.setPreferredSize(new Dimension(150, 149));
@@ -40,7 +40,7 @@ public class Dashboard extends JFrame {
         
         
 
-        ImageIcon receiveIcon = new ImageIcon("C:\\\\Users\\\\sanch\\\\Desktop\\\\decrypt.jpg");
+        ImageIcon receiveIcon = new ImageIcon("decrypt.jpg");
         receiveButton = new JButton(receiveIcon);
         receiveButton.setToolTipText("Decrypt FIR");
         receiveButton.setPreferredSize(new Dimension(150, 150));
@@ -57,7 +57,7 @@ public class Dashboard extends JFrame {
             }
         });
 
-        ImageIcon mapIcon = new ImageIcon("C:/Users/sanch/Desktop/map.jpg");
+        ImageIcon mapIcon = new ImageIcon("map.jpg");
         mapButton = new JButton(mapIcon);
         mapButton.setToolTipText("Map");
         mapButton.setPreferredSize(new Dimension(150, 150));
@@ -73,7 +73,7 @@ public class Dashboard extends JFrame {
             }
         });
 
-        ImageIcon aboutUsIcon = new ImageIcon("C:/Users/sanch/Desktop/data.jpg");
+        ImageIcon aboutUsIcon = new ImageIcon("data.jpg");
         aboutUsButton = new JButton(aboutUsIcon);
         aboutUsButton.setToolTipText("Criminal Data entry");
         aboutUsButton.setPreferredSize(new Dimension(150, 153));
@@ -88,7 +88,7 @@ public class Dashboard extends JFrame {
                 }
             }
         });
-        ImageIcon historyButtonIcon = new ImageIcon("C:/Users/sanch/Desktop/record.jpg");
+        ImageIcon historyButtonIcon = new ImageIcon("record.jpg");
         historyButton = new JButton(historyButtonIcon);
         historyButton.setToolTipText("History");
         historyButton.setPreferredSize(new Dimension(150, 149));
@@ -104,7 +104,7 @@ public class Dashboard extends JFrame {
             }
         });
 
-        ImageIcon exitIcon = new ImageIcon("C:/Users/sanch/Desktop/icons/exit.png");
+        ImageIcon exitIcon = new ImageIcon("exit.png");
         exitButton = new JButton(exitIcon);
         exitButton.setToolTipText("Exit");
         exitButton.setPreferredSize(new Dimension(150, 150));

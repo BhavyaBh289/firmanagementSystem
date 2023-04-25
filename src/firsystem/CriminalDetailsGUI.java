@@ -40,7 +40,7 @@ public class CriminalDetailsGUI extends JFrame {
         ResultSet rs = null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/fir_management_system", "root", "Sanch@123");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/fir_management_system", "root", "");
 
             // Create a statement object
             pst = con.prepareStatement("SELECT * FROM criminals");
