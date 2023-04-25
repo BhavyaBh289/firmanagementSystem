@@ -2,12 +2,15 @@ package firsystem;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -28,6 +31,18 @@ public class CriminalDetailsGUI extends JFrame {
         JPanel panel = new JPanel();
         getContentPane().add(panel, BorderLayout.CENTER);
         panel.setLayout(new BorderLayout(0, 0));
+
+        // Add the back button to the panel
+        JButton backButton = new JButton("Back to Dashboard");
+        backButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                // Open the dashboard page
+                dispose();
+                Dashboard dashboard = new Dashboard();
+                dashboard.setVisible(true);
+            }
+        });
+        panel.add(backButton, BorderLayout.NORTH);
 
         model = new DefaultTableModel(new Object[]{"Name", "Age", "Address", "Crime Type", "Description"}, 0);
         table = new JTable(model);

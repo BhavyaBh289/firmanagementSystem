@@ -26,6 +26,20 @@ public class Map extends JFrame {
 
         // Create a label to hold the image
         imageLabel = new JLabel(new ImageIcon(image));
+        JButton backButton = new JButton("Back");
+        backButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                // Redirect to the dashboard page
+                Dashboard dashboard = new Dashboard();
+                dashboard.setVisible(true);
+                dispose(); // Close the current window
+            }
+        });
+
+        // Add the back button to the top of the GUI
+        JPanel topPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+        topPanel.add(backButton);
+        getContentPane().add(topPanel, BorderLayout.NORTH);
 
         // Create a scroll pane to allow scrolling and zooming
         scrollPane = new JScrollPane(imageLabel);
