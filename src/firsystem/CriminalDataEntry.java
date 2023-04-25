@@ -93,6 +93,8 @@ public class CriminalDataEntry extends JFrame {
 
         btnCancel.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+
+                Dashboard dashbord = new Dashboard();
                 dispose();
             }
         });

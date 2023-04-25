@@ -3,7 +3,6 @@ package firsystem;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import firsystem.Main;
 
 public class Dashboard extends JFrame {
 	private JButton registerButton, receiveButton, mapButton, aboutUsButton, historyButton, exitButton;
@@ -31,7 +30,7 @@ public class Dashboard extends JFrame {
         registerButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 if (e.getSource() == registerButton) {
-                    Main main = new Main();
+                    add_record add = new add_record();
                     dispose(); // close the current window
                 }
             }
@@ -52,7 +51,7 @@ public class Dashboard extends JFrame {
                 	
                 	DecryptorGUI decryptorGUI = new DecryptorGUI();
                 	
-                    //dispose(); // close the current window
+                    dispose(); // close the current window
                 }
             }
         });
@@ -110,7 +109,13 @@ public class Dashboard extends JFrame {
         exitButton.setPreferredSize(new Dimension(150, 150));
         exitButton.setBackground(Color.WHITE);
         buttonPanel.add(exitButton);
-
+        exitButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                if (e.getSource() == exitButton) {
+                    dispose(); // close the current window
+                }
+            }
+        });
         add(buttonPanel, BorderLayout.CENTER);
 
         setVisible(true);
