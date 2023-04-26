@@ -77,7 +77,7 @@ public class add_record extends JFrame {
         add(t4);
 
         JButton b1 = new JButton(" ADD FIR RECORD ");
-        b1.setBounds(700,670,200,20);
+        b1.setBounds(600,670,200,20);
         add(b1);
         JButton backButton = new JButton("Back");
         backButton.setBounds(800,670,200,20);

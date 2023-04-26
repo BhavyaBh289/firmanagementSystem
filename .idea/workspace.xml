@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e1fb8e2-69af-435c-a449-488c9c16456c" name="Changes" comment="for muazzzz">
+    <list default="true" id="5e1fb8e2-69af-435c-a449-488c9c16456c" name="Changes" comment="final working with all back buttons">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/firsystem/CriminalDetailsGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firsystem/CriminalDetailsGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/firsystem/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firsystem/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firsystem/add_record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firsystem/add_record.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,17 +29,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/bh289/IdeaProjects/firmanagementsystem/lib/mysql-connector-j-8.0.32.jar",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/bh289/IdeaProjects/firmanagementsystem/lib/mysql-connector-j-8.0.32.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -85,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682435326778</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="final working with all back buttons">
+      <created>1682436724773</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682436724773</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -105,7 +111,8 @@
     <MESSAGE value="adding jdbc" />
     <MESSAGE value="add records working" />
     <MESSAGE value="for muazzzz" />
-    <option name="LAST_COMMIT_MESSAGE" value="for muazzzz" />
+    <MESSAGE value="final working with all back buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="final working with all back buttons" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
