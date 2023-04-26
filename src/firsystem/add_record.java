@@ -23,6 +23,7 @@ public class add_record extends JFrame {
 
         JLabel l8 =new JLabel(" FIR REGISTRATION PAGE ");
         l8.setBounds(700,20,200,100);
+        l8.setForeground(Color.WHITE);
         add(l8);
 
         JLabel l1 = new JLabel("Victim NAME:");
@@ -62,7 +63,7 @@ public class add_record extends JFrame {
 
         JLabel l7 = new JLabel("ACCUSED NAME ");
         l7.setBounds(600,500,200,40);
-        l1.setForeground(Color.WHITE);
+        l7.setForeground(Color.WHITE);
         add(l7);
         JTextField t7 = new JTextField();
         t7.setBounds(700,500,200,30);
@@ -96,7 +97,7 @@ public class add_record extends JFrame {
 
                 // Encrypt user input using AES encryption
                 try {
-                    String secretKey = "mySecretKey12345"; // Replace with your own secret key
+                    String secretKey = "mySecretKey12345";
                     byte[] key = secretKey.getBytes();
                     SecretKeySpec secretKeySpec = new SecretKeySpec(key, "AES");
                     Cipher cipher = Cipher.getInstance("AES");

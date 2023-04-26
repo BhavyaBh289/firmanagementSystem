@@ -32,7 +32,7 @@ public class RegisterPage extends JFrame implements ActionListener {
 
     public RegisterPage() {
         super("Register Page");
-        setSize(607, 1080);
+        setSize(1060, 838);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 

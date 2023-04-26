@@ -28,7 +28,7 @@ public class DecryptorGUI {
         decryptButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {
-                    String secretKey = "mySecretKey12345"; // Replace with your own secret key
+                    String secretKey = "mySecretKey12345";
 
                     // Read the encrypted data from the file
                     File file = new File("encrypted_data.txt");

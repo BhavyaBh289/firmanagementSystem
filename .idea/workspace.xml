@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e1fb8e2-69af-435c-a449-488c9c16456c" name="Changes" comment="final working with all back buttons">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5e1fb8e2-69af-435c-a449-488c9c16456c" name="Changes" comment="final working">
       <change beforePath="$PROJECT_DIR$/src/firsystem/add_record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firsystem/add_record.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682436724773</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="final working">
+      <created>1682481900013</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682481900013</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,7 +118,8 @@
     <MESSAGE value="add records working" />
     <MESSAGE value="for muazzzz" />
     <MESSAGE value="final working with all back buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="final working with all back buttons" />
+    <MESSAGE value="final working" />
+    <option name="LAST_COMMIT_MESSAGE" value="final working" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
